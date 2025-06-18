@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slateblue;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 2;
+    color: black;
+    padding: 20px;
+}
+
+h1 {
+    background-color: black;
+    border-bottom: solid 2px orange;
+    padding: 30px 100px 50px 100px;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+    font-size: 3em;
+    margin: 50px;
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.africa, .bandeira, .bandeira2, .conclusion {
+    background-color: white;
+    border-radius: 10px;
+    padding: 100px 50px 100px 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.africa {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+}
+
+.africa img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.africa p {
+    font-weight:normal;
+    font-size: 1.5em;
+    display: flex;
+    text-align: justify;
+}
+
+.bandeira, .bandeira2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 250px;
+}
+
+.bandeira img, .bandeira2 img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.bandeira p, .bandeira2 p {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    text-align: center;
+}
+
+.africa img, .bandeira img, .bandeira2 img {
+    transition: transform 0.3s;
+}
+
+.africa img:hover, .bandeira img:hover, .bandeira2 img:hover {
+    transform: scale(1.05);
+}
+
+.conclusion {
+    font-weight: normal;
+    font-size: 1.5em;
+    display: flex;
+    text-align: justify;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .africa, .bandeira, .bandeira2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .africa img, .bandeira img, .bandeira2 img {
+        width: 100%;
+    }
+
+    .africa p, .bandeira p, .bandeira2 p, .conclusion p {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2, h3 {
+        font-size: 2em;
+    }
+}
