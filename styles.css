@@ -60,7 +60,7 @@ h2, h3 {
 
 .africa p {
     font-weight: normal;
-    line-height: 30px;
+    line-height: 1.8;
     font-size: 1.5em;
     text-align: justify;
 }
@@ -95,7 +95,7 @@ h2, h3 {
 
 .conclusion p {
     font-weight: normal;
-    line-height: 30px;
+    line-height: 1.8;
     font-size: 1.5em;
     text-align: justify;
 }
